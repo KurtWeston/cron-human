@@ -1,0 +1,38 @@
+{
+  "name": "cron-human",
+  "version": "1.0.0",
+  "description": "Convert cron expressions to human-readable descriptions and vice versa",
+  "main": "dist/index.js",
+  "bin": {
+    "cron-human": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["cron", "scheduler", "parser", "cli"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@onamfc/developer-log": "^1.0.0",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "croner": "^7.0.5"
+  },
+  "devDependencies": {
+    "@onamfc/pkg-inspect": "^1.0.0",
+    "@onamfc/api-mocker": "^1.0.0",
+    "@types/node": "^20.10.0",
+    "@types/jest": "^29.5.11",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
